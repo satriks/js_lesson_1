@@ -8,6 +8,10 @@ while (true ) {
 
     let tryNumber = prompt("Введите число от 0 до 1000. (для выхода q)")
     
+    if (tryNumber == "q"){
+        break
+    }
+
     tryNumber = +tryNumber
 
     if (isNaN(tryNumber)) {
@@ -17,9 +21,7 @@ while (true ) {
         break
     } else if (tryNumber > randomNumber) {
         alert ("Загаданное число  меньше")
-    } else if (tryNumber == "q"){
-        break
-    }  else {
+    } else {
         alert("Загаданное число больше")
     }
 
